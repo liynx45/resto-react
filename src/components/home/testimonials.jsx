@@ -9,21 +9,21 @@ export default function Testimonials() {
             id: 1,
             name: "Jhon Dea",
             work: "Bloger",
-            src: "avatar1.png",
+            src: avatar,
             massage: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab non voluptates sapiente?"
         },
         {
             id: 2,
             name: "Jhon Sith",
             work: "Driver",
-            src: "avatar2.png",
+            src: avatar,
             massage: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus tempore modi illo officia nesciunt assumenda?"
         },
         {
             id: 3,
             name: "Walker",
             work: "Youtuber",
-            src: "avatar3.png",
+            src: avatar,
             massage: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molestias tempora autem ipsa repellendus."
         }
     ]
@@ -43,7 +43,7 @@ export default function Testimonials() {
                     user.map((data, index) => {
                         if (index === slide) {
                             return (
-                                <TestimoniCard.Header>
+                                <TestimoniCard.Header key={data.id}>
                                     {data.massage}
                                 </TestimoniCard.Header>
                             )
@@ -56,7 +56,7 @@ export default function Testimonials() {
                     {
                         user.map((data, index) => {
                             if (index === slide) {
-                                return <TestimoniCard data={data} />
+                                return <TestimoniCard key={data.id} data={data} />
                             } else {
                                 return null
                             }

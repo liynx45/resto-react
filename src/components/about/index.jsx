@@ -1,7 +1,7 @@
-export default function MenuHeader() {
+export default function AboutHeader() {
     return(
         <div className="min-h-screen w-full flex justify-center items-center">
-            <span>Menu Still Developement</span>
+            <span>about Still Developement</span>
         </div>
     )
 }

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import side from "../../assets/bacground/side.png"
 
 const dataNav = [
@@ -18,7 +18,7 @@ const dataNav = [
         path : "/about"
     },
     {
-        id : 1,
+        id : 4,
         name : "Contact",
         path : "/contact"
     }
@@ -26,13 +26,13 @@ const dataNav = [
 
 export default function Sidebar({setToggle}) {
     return (
-        <div style={{backgroundImage: `url(${side})`, filter: " hue-rotate(100deg)"}} className="bg-primaryColor z-50 w-full min-h-screen text-white fixed ">
+        <div style={{backgroundImage: `url(${side})`, filter: " hue-rotate(100deg)"}} className="backdrop-opacity-10 bg-primaryColor z-[999] w-full min-h-screen text-white fixed ">
             <button onClick={() => setToggle(false)} className="absolute top-[50px] left-16 text-5xl">&#xD7;</button>
             <div className="flex w-full h-full justify-between px-48 py-36">
                 <ul className="text-5xl flex flex-col gap-8 list-disc">
                     {dataNav.map(nav => (
                         <li key={nav.id}>
-                            <Link onClick={() => setToggle(false)} to={nav.path}>{nav.name}</Link>
+                            <NavLink onClick={() => setToggle(false)} to={nav.path}>{nav.name}</NavLink>
                         </li>
                     ))}
                 </ul>

@@ -1,5 +1,4 @@
-
-import fish from "../../assets/home/features/icon_fish.png"
+import fish1 from "../../assets/home/features/icon_fish.png"
 import carrot from "../../assets/home/features/icon_carrot.png"
 import lemon from "../../assets/home/features/icon_lemon.png"
 import SectionLayout from "../../layouts/sectionlayout";
@@ -10,7 +9,7 @@ export default function Features() {
         <SectionLayout>
             <div className="container flex justify-between items-center">
                 <div className="flex flex-col gap-6 justify-center items-center">
-                    <img src={fish} className="w-[150px] p-4 rounded-full bg-backgroundWhite" alt="" />
+                    <img src={fish1} className="w-[150px] p-4 rounded-full bg-backgroundWhite" alt="" />
                     <ThirdTittle color="black">
                         Premium Qualty
                     </ThirdTittle>
