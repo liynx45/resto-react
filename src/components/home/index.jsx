@@ -3,7 +3,7 @@ import product_1 from "../../assets/home/product_1.png"
 import SectionLayout from "../../layouts/sectionlayout";
 import HeadTittle from "../fragments/tittle/headTitle";
 import SubTittle from "../fragments/tittle/subtTittle";
-import imagesBack from "../../assets/home/mainpage/image.png"
+
 import spices1 from "../../assets/home/mainpage/spices1.png"
 import spices2 from "../../assets/home/mainpage/spices2.png"
 import spices3 from "../../assets/home/mainpage/spices3.png"
@@ -21,7 +21,7 @@ export default function MainSection() {
                         <span className=" text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque voluptate beatae <br /> molestias ab impedit commodi repellat eum non</span>
                     </div>
                     <div className="relative pt-36 translate-x-[50%]">
-                        <img src={imagesBack} className="w-1/2 z-0" alt="" />
+                        <img src="" className="w-1/2 z-0" alt="" />
                         <div className="flex gap-6 absolute bottom-0 -translate-x-1/2">
                             <img src={spices1} className="w-[200px] h-[200px]" alt="" />
                             <img src={spices2} className="w-[200px] h-[200px]" alt="" />
