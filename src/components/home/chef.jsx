@@ -1,4 +1,3 @@
-import chef from "../../assets/home/chef/chef.png"
 import SectionLayout from "../../layouts/sectionlayout";
 import SubTittle from "../fragments/tittle/subtTittle";
 
