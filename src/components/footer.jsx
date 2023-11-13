@@ -20,8 +20,8 @@ export default function Footer() {
                     <span className="text-xl pb-12">Never Miss a Recipe</span>
                     <div style={{
                         display : "grid",
-                        gridTemplateColumns: "60% 40%",
-                        gap: "30px"
+                        gridTemplateColumns: "60% 30%",
+                        gap: "20px"
                     }}>
                         <input type="text" placeholder="Email Address" className="bg-transparent border-2 px-4 py-2 border-white" />
                         <button className="bg-secondaryColor text-md font-semibold text-white">Submit</button>

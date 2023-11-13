@@ -22,7 +22,7 @@ export default function Navbar() {
                             </button>
                         </div>
                         <div className="flex gap-8 items-center text-white text-[8px] md:text-base">
-                            <span>+62 081226948547</span>
+                            <span className="hidden md:block">+62 081226948547</span>
                             <div className="border border-white py-2 px-8 hover:bg-white hover:text-primaryColor">
                                 <span>Resevaciton</span>
                             </div>
