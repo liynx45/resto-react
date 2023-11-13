@@ -8,8 +8,8 @@ import SubTittle from "../fragments/tittle/subtTittle";
 export default function Chef(){
     return(
         <SectionLayout background="bg-backgroundWhite">
-            <div className="container flex gap-8">
-                <img src={chef} className="w-1/2"/>
+            <div className="container flex flex-col md:flex-row gap-8">
+                <img src="/assets/home/chef/chef.png" className="w-full md:w-1/2"/>
                 <div className="flex flex-col pt-12">
                     <SubTittle color="black">
                     Excellent <br/>Cook

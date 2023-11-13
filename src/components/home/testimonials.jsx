@@ -1,5 +1,4 @@
 import SectionLayout from "../../layouts/sectionlayout";
-import avatar from "../../assets/home/testimonials/avatar.png"
 import { useState } from "react";
 import TestimoniCard from "../fragments/cards/testimoniCard";
 
@@ -9,21 +8,21 @@ export default function Testimonials() {
             id: 1,
             name: "Jhon Dea",
             work: "Bloger",
-            src: avatar,
+            src: "/assets/home/testimonials/user.png",
             massage: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab non voluptates sapiente?"
         },
         {
             id: 2,
             name: "Jhon Sith",
             work: "Driver",
-            src: avatar,
+            src: "/assets/home/testimonials/user.png",
             massage: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus tempore modi illo officia nesciunt assumenda?"
         },
         {
             id: 3,
             name: "Walker",
             work: "Youtuber",
-            src: avatar,
+            src: "/assets/home/testimonials/user.png",
             massage: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molestias tempora autem ipsa repellendus."
         }
     ]
@@ -38,7 +37,7 @@ export default function Testimonials() {
 
     return (
         <SectionLayout>
-            <div className="container p-8 px-32 flex flex-col gap-6">
+            <div className="container p-8 md:px-32 flex flex-col gap-6">
                 {
                     user.map((data, index) => {
                         if (index === slide) {
