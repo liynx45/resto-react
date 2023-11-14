@@ -8,7 +8,7 @@ export default function Navbar() {
     return (
         <nav className={`absolute w-full top-0 z-50`}>
             {toggle ? <Sidebar setToggle={setToggle} /> : (
-                <div className="container">
+                <div className="w-full">
                     <div className="w-full px-2 md:px-12 flex justify-between items-center py-6 bg-primaryColor">
                         <div className="flex gap-2 md:gap-8 items-center text-white">
                             <Link to={"/"} className="md:text-2xl text-base relative">
